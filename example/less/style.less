@@ -1,0 +1,195 @@
+@import "less/variables.less";
+@import "less/mixins.less";
+
+* {box-sizing: border-box;}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: @font-family;
+  font-size: 16px;
+  line-height: 1.5;
+  color: @color-text;
+}
+
+a {
+  color: @color-link;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: @color-btn;
+  background-color: @color-btn-bg;
+  border: 1px solid @color-btn-border;
+  #radius(.3rem);
+  transition: color .2s, background-color .2s, border-color .2s;
+  outline: 0 none;
+  & + & {margin-left: 1rem;}
+  &:hover {
+    text-decoration: none;
+    color: @color-btn-hover;
+    background-color: @color-btn-bg-hover;
+    border-color: @color-btn-border-hover;
+  }
+  @media @media-1 {
+    padding: .75rem 1rem;
+  }
+  @media @media-2 {
+    padding: .6rem .9rem;
+    font-size: .9rem;
+  }
+  @media @media-3 {
+    display: block;
+    width: 100%;
+    padding: .75rem;
+    font-size: .9rem;
+    & + & {
+      margin-top: 1rem;
+      margin-left: 0;
+    }
+  }
+}
+
+.page-header {
+  background-color: @color-page-header-bg-color;
+  background-image: @color-page-header-bg-image;
+  color: @color-page-header;
+  text-align: center;
+  @media @media-1 {padding: 5rem 6rem;}
+  @media @media-2 {padding: 3rem 4rem;}
+  @media @media-3 {padding: 2rem 1rem;}
+}
+
+.project-name {
+  margin-top: 0;
+  margin-bottom: .1rem;
+  @media @media-1 {font-size: 3.25rem;}
+  @media @media-2 {font-size: 2.25rem;}
+  @media @media-3 {font-size: 1.75rem;}
+}
+
+.project-tagline {
+  margin-bottom: 2rem;
+  font-weight: normal;
+  opacity: .7;
+  @media @media-1 {font-size: 1.25rem;}
+  @media @media-2 {font-size: 1.15rem;}
+  @media @media-3 {font-size: 1rem;}
+}
+
+.main-content {
+  opacity:1;
+  &:first-child {margin-top: 0;}
+  img {max-width: 100%;}
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    color: @color-header;
+  }
+  p {margin-bottom: 1em;}
+  code {
+    padding: 2px 4px;
+    font-family: @font-family-code;
+    font-size: .9rem;
+    color: @color-code;
+    background-color: @color-code-bg;
+    #radius(.3rem);
+  }
+  pre {
+    overflow: auto;
+    padding: .8rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font: .9rem @font-family-code;
+    line-height: 1.45;
+    color: @color-pre;
+    word-wrap: normal;
+    background-color: @color-pre-bg;
+    border: solid 1px @color-pre-border;
+    #radius(.3rem);
+    & > code {
+      padding: 0;
+      margin: 0;
+      font-size: .9rem;
+      color: inherit;
+      word-break: normal;
+      white-space: pre;
+      background: transparent;
+      border: 0;
+    }
+    code, tt {
+      display: inline;
+      max-width: initial;
+      padding: 0;
+      margin: 0;
+      overflow: initial;
+      line-height: inherit;
+      word-wrap: normal;
+      background-color: transparent;
+      border: 0;
+    }
+    code:before, code:after, tt:before, tt:after {content: normal;}
+  }
+  ul, ol {margin-top: 0;}
+  blockquote {
+    padding: 0 1rem;
+    margin-left: 0;
+    color: @color-blockquote;
+    border-left: .3rem solid @color-blockquote-border;
+    &>:first-child {margin-top: 0;}
+    &>:last-child {margin-bottom: 0;}
+  }
+  table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    word-break: normal;
+    word-break: keep-all;
+    th {font-weight: bold;}
+    th, td {
+      padding: .5rem 1rem;
+      border: 1px solid @color-table-item-border;
+    }
+  }
+  dl {
+    padding: 0;
+    dt {
+      padding: 0;
+      margin-top: 1rem;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    dd {
+      padding: 0;
+      margin-bottom: 1rem;
+    }
+  }
+  hr {
+    height: 2px;
+    padding: 0;
+    margin: 1rem 0;
+    background-color: @color-hr-bg;
+    border: 0;
+  }
+  @media @media-1 {
+    max-width: 64rem;
+    padding: 2rem 6rem;
+    margin: 0 auto;
+    font-size: 1.1rem;
+  }
+  @media @media-2 {
+    padding: 2rem 4rem;
+    font-size: 1.1rem;
+  }
+  @media @media-3 {
+    padding: 2rem 1rem;
+    font-size: 1rem;
+  }
+}
