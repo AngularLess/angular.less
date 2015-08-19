@@ -24,7 +24,7 @@ npm install angular.less
 Add the Angular.Less module as a dependency to your application module:
 
 ```javascript
-var myAppModule = angular.module('MyApp', [require('$Less')]);
+var myAppModule = angular.module('MyApp', [require('angular.less')]);
 ```
 
 
@@ -39,8 +39,8 @@ along with its dependencies. Load the script files in your application (`index.h
 
 ```html
 <script type="text/javascript" src="bower_components/prefix-free/prefixfree.min.js"></script>
-<script type="text/javascript" src="bower_components/less.js/less.min.js"></script>
-<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+<script type="text/javascript" src="bower_components/less/dist/less.min.js"></script>
+<script type="text/javascript" src="bower_components/angular.js/angular.min.js"></script>
 <script type="text/javascript" src="bower_components/angular.less/angular.less.js"></script>
 ```
 

@@ -1,0 +1,27 @@
+{
+  "name": "angular.less",
+  "version": "0.0.2",
+  "description": "This directive allows you to add 'Less' and 'PrefixFree' support for your Angular application.",
+  "main": "index.js",
+  "dependencies": {
+    "less": ">=1.0",
+    "angular": "1.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AngularLess/angular.less.git"
+  },
+  "keywords": [
+    "angular",
+    "less",
+    "prefixfree",
+    "css",
+    "client-side"
+  ],
+  "author": "Max Chuhryaev <w3core@gmail.com>",
+  "license": "BSD License",
+  "bugs": {
+    "url": "https://github.com/AngularLess/angular.less/issues"
+  },
+  "homepage": "http://angularless.github.io/angular.less/"
+}
