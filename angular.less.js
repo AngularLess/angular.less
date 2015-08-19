@@ -9,6 +9,8 @@
  * - [Less.JS] 1.x or newer
  * - [PrefixFree] (optional)
  *
+ * https://github.com/AngularLess/angular.less
+ *
  * @version 0.0.1
  *
  * @license BSD License
