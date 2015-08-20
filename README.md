@@ -1,15 +1,13 @@
 # Angular.Less
 
-This directive allows you to add [Less]
-and [PrefixFree] support
-for your Angular application.
+This directive allows you to add [Less] and [PrefixFree] on the fly support
+for your Angular application ([example]).
 
 ## Requirements
 
 - [AngularJS] 1.x or newer
 - [Less.JS] 1.x or newer
-- [PrefixFree] (optional)
-
+- [PrefixFree] An optional but recommended
 
 ## Install
 
@@ -47,7 +45,7 @@ along with its dependencies. Load the script files in your application (`index.h
 Add the Angular.Less module as a dependency to your application module:
 
 ```javascript
-var myAppModule = angular.module('MyApp', ['$Less']);
+var myAppModule = angular.module('MyApp', ['angular.less']);
 ```
 
 ## Usage
@@ -60,10 +58,14 @@ To start off, link your `.less` stylesheets with the rel attribute set to `"styl
 <link rel="stylesheet/less" type="text/css" href="styles.less" />
 ```
 
-[AngularJS]: https://angularjs.org/
-[Less.JS]: http://lesscss.org/
-[Less]: http://lesscss.org/
-[PrefixFree]: http://leaverou.github.io/prefixfree/
+Visit plugin [example] page to see how it works.
 
-[Bower]: http://bower.io/
-[npm]: https://www.npmjs.com/
+
+[Example]: https://angularless.github.io/
+[AngularJS]: https://angularjs.org/
+[Less]: http://lesscss.org/
+[Less.JS]: http://lesscss.org/#client-side-usage
+[PrefixFree]: https://leaverou.github.io/prefixfree/
+
+[Bower]: http://bower.io/search/?q=angular.less
+[npm]: https://www.npmjs.com/package/angular.less

@@ -1,22 +1,23 @@
 /**
  * Angular.Less - Less CSS preprocessor support for AngularJS
  *
- * This directive allows you to add [Less] and [PrefixFree]
- * support for your Angular application.
+ * This directive allows you to add Less and PrefixFree on the fly support 
+ * for your Angular application.
  *
  * Requirements:
  * - [AngularJS] 1.x or newer
  * - [Less.JS] 1.x or newer
- * - [PrefixFree] (optional)
+ * - [PrefixFree] An optional but recommended
  *
- * https://github.com/AngularLess/angular.less
+ * Site: https://github.com/AngularLess/angular.less/
+ * Demo: https://angularless.github.io/
  *
- * @version 0.0.1
+ * @version 0.0.3
  *
  * @license BSD License
  * @author Max Chuhryaev
  */
-angular.module('$Less', []).directive('link', function($compile, $http) {
+angular.module('angular.less', []).directive('link', function($compile, $http) {
 
   var clearHREF = function(href, base) {
     var s = (typeof href == 'string') ? href.replace(/([?#].*)$/i, '') : '';

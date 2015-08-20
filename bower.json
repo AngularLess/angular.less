@@ -1,7 +1,7 @@
 {
   "name": "angular.less",
-  "version": "0.0.2",
-  "description": "This directive allows you to add 'Less' and 'PrefixFree' support for your Angular application.",
+  "version": "0.0.3",
+  "description": "This directive allows you to add Less and PrefixFree on the fly support for your Angular application",
   "main": "angular.less.js",
   "dependencies": {
     "prefix-free": "gh-pages",
