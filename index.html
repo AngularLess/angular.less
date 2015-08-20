@@ -12,7 +12,7 @@
   <body>
     <section class="page-header">
       <h1 class="project-name">Angular.Less</h1>
-      <h2 class="project-tagline">This directive allows you to add Less and PrefixFree support for your Angular application.</h2>
+      <h2 class="project-tagline">This directive allows you to add &quot;Less&quot; and &quot;PrefixFree&quot; on the fly support for your Angular application.</h2>
       <a href="https://github.com/AngularLess/angular.less" class="btn">View on GitHub</a>
       <a href="https://github.com/AngularLess/angular.less/zipball/master" class="btn">Download .zip</a>
       <a href="https://github.com/AngularLess/angular.less/tarball/master" class="btn">Download .tar.gz</a>
@@ -22,9 +22,8 @@
       <h1>
 <a id="angularless" class="anchor" href="#angularless" aria-hidden="true"><span class="octicon octicon-link"></span></a>Angular.Less</h1>
 
-<p>This directive allows you to add <a href="http://lesscss.org/">Less</a>
-and <a href="http://leaverou.github.io/prefixfree/">PrefixFree</a> support
-for your Angular application.</p>
+<p>This directive allows you to add <a href="http://lesscss.org/">Less</a> and <a href="https://leaverou.github.io/prefixfree/">PrefixFree</a> on the fly support
+for your Angular application (<a href="https://angularless.github.io/">example</a>).</p>
 
 <h2>
 <a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h2>
@@ -33,17 +32,18 @@ for your Angular application.</p>
 <li>
 <a href="https://angularjs.org/">AngularJS</a> 1.x or newer</li>
 <li>
-<a href="http://lesscss.org/">Less.JS</a> 1.x or newer</li>
-<li><a href="optional">PrefixFree</a></li>
+<a href="http://lesscss.org/#client-side-usage">Less.JS</a> 1.x or newer</li>
+<li>
+<a href="https://leaverou.github.io/prefixfree/">PrefixFree</a> An optional but recommended</li>
 </ul>
 
 <h2>
 <a id="install" class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install</h2>
 
-<p>You can install this package either with <a href="https://www.npmjs.com/">npm</a> or with <a href="http://bower.io/">bower</a>.</p>
+<p>You can install this package either with <a href="https://www.npmjs.com/package/angular.less">npm</a> or with <a href="http://bower.io/search/?q=angular.less">bower</a>.</p>
 
 <h3>
-<a id="npm" class="anchor" href="#npm" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://www.npmjs.com/">npm</a>
+<a id="npm" class="anchor" href="#npm" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://www.npmjs.com/package/angular.less">npm</a>
 </h3>
 
 <div class="highlight highlight-sh"><pre>npm install angular.less</pre></div>
@@ -53,7 +53,7 @@ for your Angular application.</p>
 <div class="highlight highlight-javascript"><pre><span class="pl-k">var</span> myAppModule <span class="pl-k">=</span> angular.<span class="pl-c1">module</span>(<span class="pl-s"><span class="pl-pds">'</span>MyApp<span class="pl-pds">'</span></span>, [<span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>angular.less<span class="pl-pds">'</span></span>)]);</pre></div>
 
 <h3>
-<a id="bower" class="anchor" href="#bower" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://bower.io/">bower</a>
+<a id="bower" class="anchor" href="#bower" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://bower.io/search/?q=angular.less">bower</a>
 </h3>
 
 <div class="highlight highlight-sh"><pre>bower install angular.less</pre></div>
@@ -68,7 +68,7 @@ along with its dependencies. Load the script files in your application (<code>in
 
 <p>Add the Angular.Less module as a dependency to your application module:</p>
 
-<div class="highlight highlight-javascript"><pre><span class="pl-k">var</span> myAppModule <span class="pl-k">=</span> angular.<span class="pl-c1">module</span>(<span class="pl-s"><span class="pl-pds">'</span>MyApp<span class="pl-pds">'</span></span>, [<span class="pl-s"><span class="pl-pds">'</span>$Less<span class="pl-pds">'</span></span>]);</pre></div>
+<div class="highlight highlight-javascript"><pre><span class="pl-k">var</span> myAppModule <span class="pl-k">=</span> angular.<span class="pl-c1">module</span>(<span class="pl-s"><span class="pl-pds">'</span>MyApp<span class="pl-pds">'</span></span>, [<span class="pl-s"><span class="pl-pds">'</span>angular.less<span class="pl-pds">'</span></span>]);</pre></div>
 
 <h2>
 <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
@@ -78,6 +78,8 @@ by using default HTML tag <code>link</code>.
 To start off, link your <code>.less</code> stylesheets with the rel attribute set to <code>"stylesheet/less"</code>:</p>
 
 <div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet/less<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>styles.less<span class="pl-pds">"</span></span> /&gt;</pre></div>
+
+<p>Visit plugin <a href="https://angularless.github.io/">example</a> page to see how it works.</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/AngularLess/angular.less">Angular.Less</a> is maintained by <a href="https://github.com/AngularLess">AngularLess</a>.</span>
